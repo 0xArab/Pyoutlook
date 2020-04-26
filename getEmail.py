@@ -1,7 +1,6 @@
 
 # @xAltmime
 
-
 try:
 
     import requests,re
@@ -45,7 +44,7 @@ class outlook:
                - UUID) is a 128-bit number used to identify information in computer systems. The term globally unique identifier (GUID) is also used
                - When generated according to the standard methods, UUIDs are for practical purposes unique
                - Their uniqueness does not depend on a central registration authority or coordination between the parties generating them, unlike most other numbering schemes
-               -  anyone can create a UUID and use it to identify something with near certainty that the identifier does not duplicate one that has already been, or will be, created to identify something else. Information labeled with UUIDs by independent parties can therefore
+               - anyone can create a UUID and use it to identify something with near certainty that the identifier does not duplicate one that has already been, or will be, created to identify something else. Information labeled with UUIDs by independent parties can therefore
        """
         def get_uuid(self):
                 return self.UUID_HEADER
@@ -83,4 +82,4 @@ class outlook:
         
         
         
-Login("looolis@outlook.sa")
+Login("looolis@outlook.com")
