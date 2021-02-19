@@ -54,14 +54,19 @@ class outlook:
                 return re.findall('<input type="hidden" name="PPFT" id="i0327" value=(.*?)>',self.request_uuid.text)[0].replace('""/','').replace('"',"")
         
         def data_requests():
-                 return  {"username":self.Email_outlook,"uaid":self.get_uuid(),"isOtherIdpSupported":"false","checkPhones":"false","isRemoteNGCSupported":"true","isCookieBannerShown":"false",
-                   "isFidoSupported":"false",
-                         "forceotclogin":"false",
-                    "otclogindisallowed":"false",
+                 return  {"username":self.Email_outlook,
+                          "uaid":self.get_uuid(),
+                          "isOtherIdpSupported":"false",
+                          "checkPhones":"false",
+                          "isRemoteNGCSupported":"true",
+                          "isCookieBannerShown":"false",
+                          "isFidoSupported":"false",
+                          "forceotclogin":"false",
+                          "otclogindisallowed":"false",
                           "isExternalFederationDisallowed":"false",
-                   "isRemoteConnectSupported":"false",
+                          "isRemoteConnectSupported":"false",
                           "federationFlags":3,
-                   "isSignup":"false",
+                          "isSignup":"false",
                           "flowToken":self.get_flow()
                         }
         """ Login and get data of others functions """
