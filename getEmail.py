@@ -1,6 +1,4 @@
 
-# @xAltmime
-
 try:
 
     import requests,re
